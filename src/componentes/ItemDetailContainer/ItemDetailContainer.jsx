@@ -1,10 +1,12 @@
-
+import itemDetail from '../ItemDetail/itemDetail'
 import React from 'react'
 
-export const ItemDetailContainer = () => {
+const itemDetailContainer = () => {
   return (
     <div>
-        
+        <itemDetail />
     </div>
   )
 }
+
+export default itemDetailContainer

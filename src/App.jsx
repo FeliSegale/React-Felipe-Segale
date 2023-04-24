@@ -3,7 +3,7 @@
 // import './App.css'
 import Navbar from './componentes/navbar/navbar'
 import ItemListContainer from './componentes/itemListContainer/itemListContainer'
-import { ItemDetailContainer } from './componentes/ItemDetailContainer/ItemDetailContainer';
+import itemDetailContainer from './componentes/ItemDetailContainer/itemDetailContainer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -15,7 +15,7 @@ let style = {fontSize: 22, backgroundColor: `white`, color: `black`}
     return ( 
         <div style= {style}>
           <Navbar/>
-          <ItemDetailContainer />
+          <itemDetailContainer />
           <ItemListContainer/>
           
         </div>
