@@ -1,4 +1,4 @@
-import itemDetail from '../ItemDetail/itemDetail'
+import itemDetail from '../itemDetail/itemDetail'
 import React from 'react'
 
 const itemDetailContainer = () => {
