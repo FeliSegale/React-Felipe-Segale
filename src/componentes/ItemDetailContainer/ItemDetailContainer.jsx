@@ -3,21 +3,22 @@ import { mFetch } from "../mFetch/mFetch"
 import { useEffect, useState } from "react"
 
 const ItemDetailContainer = () => {
+  const [item, setItem] = useState([]);
 
-  const [item, setItem] = useState([])
-  useEffect(() =>{
+  useEffect(() => {
     mFetch()
-    .then(resultado =>{
-        return setItem(resultado)
-    .then(console.log(item))
-    })
-    .catch(error => console.log(error))
-}, [])
+      .then(resultado => {
+        setItem(resultado)
+        console.log(resultado)
+      })
+      .catch(error => console.log(error));
+  }, []);
+
   return (
     <div>
-        <ItemDetail />
+      <ItemDetail item={item} />
     </div>
-  )
+  );
 }
 
 export default ItemDetailContainer
