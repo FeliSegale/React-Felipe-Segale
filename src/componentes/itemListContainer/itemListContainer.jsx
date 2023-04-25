@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { mFetch } from "../mFetch/mFetch"
 import ItemCount from "../ItemCount/ItemCount"
+import ItemDetailContainer from "../itemDetailContainer/itemDetailContainer"
 
 
 
@@ -37,7 +38,7 @@ console.log(producto)
                 <ItemCount />
                 </div>
                 <div className="card-footer">
-                <button className="btn btn-outline-dark">Detalle</button>
+                <button className="btn btn-outline-dark" onClick={ItemDetailContainer}>Detalle</button>
                 </div>
             </div> )
         }
