@@ -38,7 +38,11 @@ console.log(producto)
                 <ItemCount />
                 </div>
                 <div className="card-footer">
-                <button className="btn btn-outline-dark" onClick={ItemDetailContainer}>Detalle</button>
+                <button
+                                className='btn btn-outline-dark'
+                                onClick={ItemDetailContainer}>
+                                Detalle
+                            </button>
                 </div>
             </div> )
         }
